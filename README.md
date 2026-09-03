@@ -5,7 +5,7 @@ engineering capabilities — log analysis, threat intelligence processing, and
 detection rule management — built as the capstone project for the AI Cyber 
 Defense Ops program (WiCyS / Just Hacking Training). Certificate issued July 2026.
 
-![Purple Team Pipeline](./images/pipeline-diagram.png)
+![Purple Team Pipeline](./image/pipeline-diagram.png)
 
 ## What It Does
 
