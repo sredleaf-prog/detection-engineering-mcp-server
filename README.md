@@ -35,3 +35,5 @@ Ran a full end-to-end purple team loop against a real threat campaign
 2. **Executed atomic tests** for T1082 (System Information Discovery) and 
    T1069.002 (Domain Groups Discovery)
 3. **Scanned with Hayabusa** — 46,900+ EVTX detections across Security and
+
+📄 [Full capstone report (PDF)](./AI-Cyber-Defense-Ops-Capstone-Report.pdf)
