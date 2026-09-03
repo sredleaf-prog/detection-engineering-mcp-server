@@ -7,7 +7,7 @@ Defense Ops program (WiCyS / Just Hacking Training). Certificate issued July 202
 
 📄 [Full capstone report (PDF)](./AI-Cyber-Defense-Ops-Capstone-Report.pdf)
 
-![Purple Team Pipeline](./images/pipeline-diagram.png)
+![Purple Team Pipeline](./image/pipeline-diagram.png)
 
 ## What It Does
 
