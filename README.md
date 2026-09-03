@@ -7,7 +7,7 @@ Defense Ops program (WiCyS / Just Hacking Training). Certificate issued July 202
 
 📄 [Full capstone report (PDF)](./AI-Cyber-Defense-Ops-Capstone-Report.pdf)
 
-![Purple Team Pipeline](./image/pipeline-diagram.png)
+![Purple Team Pipeline](./images/pipeline-diagram.png)
 
 ## What It Does
 
@@ -36,4 +36,35 @@ Ran a full end-to-end purple team loop against a real threat campaign
    Execution, Persistence, and C2 tactics
 2. **Executed atomic tests** for T1082 (System Information Discovery) and 
    T1069.002 (Domain Groups Discovery)
-3. **Scanned with Hayabusa** — 46,900+ EVTX detections across Security and
+3. **Scanned with Hayabusa** — 46,900+ EVTX detections across Security and 
+   Sysmon logs
+4. **Validated in Splunk** — confirmed both techniques fully captured in Sysmon
+5. **Found a real gap** — Windows Security EventCode 4688 (Process Creation) 
+   was not enabled, meaning Discovery-phase commands were invisible to Windows 
+   Security auditing despite being caught in Sysmon
+6. Separately validated **T1136.001** (local account creation → privilege 
+   escalation → cleanup) — fully detected end-to-end with zero gaps
+
+## Key Metrics
+
+| Metric | Value |
+|---|---|
+| Sigma rules written | 20+ |
+| ATT&CK techniques mapped | 50+ |
+| Threat intel reports ingested | 1 (CISA AA26-194A) |
+| Credential access hunts | 7 |
+| Purple team tests executed | 3 techniques |
+
+## Reporting
+
+Produced both an analyst-level report (execution timeline, SIEM validation, 
+gap analysis, SPL queries) and a CISO-ready executive deck (coverage metrics, 
+key findings, remediation priorities) — practicing translating technical 
+findings for both technical and executive audiences.
+
+## Notes
+
+Built as the capstone project for AI Cyber Defense Ops (WiCyS / Just Hacking 
+Training, Module 10+: Purple Team & Multi-Agent Workflows). All personal 
+identifiers and credentials have been sanitized — machine names appear as 
+HOST-A/HOST-B, usernames as USER-A/USER-B.
